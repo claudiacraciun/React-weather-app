@@ -5,9 +5,38 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  min-height: 100vh;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+#root {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+main {
+  flex: auto;
+}
+
+.home-weather-description {
+  text-transform: capitalize;
+  font-weight: 600;
+}
+
+.forecast-container {
+  padding: 1rem;
+}
+
+.custom-link-button {
+  text-decoration: none;
+  border: 1px solid blue;
+  border-radius: 5px;
+  padding: 0.5rem;
+  color: white;
+  background-color: #0000ff9c;
+}
+
+.custom-link-button:hover {
+  color: white;
+  background-color: #0000899c;
 }
